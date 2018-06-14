@@ -17,14 +17,14 @@ namespace RobertoDaGuarcino.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Something about my projects";
 
             return View();
         }
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Get in touch with Roberto";
 
             return View();
         }
