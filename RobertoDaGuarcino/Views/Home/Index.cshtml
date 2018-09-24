@@ -1,23 +1,6 @@
 ﻿@{
     ViewData["Title"] = "Home";
 }
-<!--
-<div class="jumbotron"
-     style="background: url('../../../../images/ciociariablack.jfif') no-repeat center center;
-     padding-top: 30px;
-     padding-bottom: 30px;
-     margin-bottom: 30px;
-     box-shadow: 0px 0px 5px 5px grey;">
-    <div class="Homeland"
-         style="
-    font-family: inherit;
-    font-weight: 1000px;
-    line-height: 1.5;
-    color: azure;
-    font-size: 99px;
-    visibility: hidden;">Homeland<br /></div>
-</div>
--->
 <h2>A little carousel about...</h2>
 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
     <ol class="carousel-indicators">
@@ -28,15 +11,29 @@
         <li data-target="#myCarousel" data-slide-to="4"></li>
         <li data-target="#myCarousel" data-slide-to="5"></li>
         <li data-target="#myCarousel" data-slide-to="6"></li>
+        <li data-target="#myCarousel" data-slide-to="7"></li>
     </ol>
     <div class="carousel-inner" role="listbox">
         <div class="item active">
+            <a href="https://www.slideshare.net/RobertoFalconi4/bb8-run-a-star-wars-video-game-116261976">
+                <img src="~/images/Webp.net-resizeimage.png" alt="ASP.NET" class="img-responsive" />
+            </a>
+            <div class="carousel-caption" role="option">
+                <p>
+                    3D endless runner video game based on Star Wars universe<br />
+                    <a class="btn btn-default" href="https://www.slideshare.net/RobertoFalconi4/bb8-run-a-star-wars-video-game-116261976">
+                        Learn More
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
             <a href="https://www.slideshare.net/RobertoFalconi4/suomi-initial-concept-user-evaluation">
                 <img src="~/images/SUOMI.png" alt="ASP.NET" class="img-responsive" />
             </a>
             <div class="carousel-caption" role="option">
                 <p>
-                    SUOMI: software that guide users of a spa in the best possible journey using IoT
+                    Software that guide users of a spa in the best possible journey using IoT<br />
                     <a class="btn btn-default" href="https://www.slideshare.net/RobertoFalconi4/suomi-initial-concept-user-evaluation">
                         Learn More
                     </a>
@@ -50,7 +47,7 @@
             </a>
             <div class="carousel-caption" role="option">
                 <p>
-                    Smart home automation: measure your house temperature and send it on your devices
+                    Measure your house temperature and send it on your devices<br />
                     <a class="btn btn-default" href="https://www.slideshare.net/RobertoFalconi4/house-temperature-monitoring-using-aws-iot-and-raspberry-pi">
                         Learn More
                     </a>
@@ -63,7 +60,7 @@
             </a>
             <div class="carousel-caption" role="option">
                 <p>
-                    Kalypso: software to encrypt messages and to send them via any social or IM
+                    Software to encrypt messages and to send them via any social or IM<br />
                     <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525029&clcid=0x409">
                         Learn More
                     </a>
@@ -76,7 +73,7 @@
             </a>
             <div class="carousel-caption" role="option">
                 <p>
-                    Game Ratings Predictor: Supervised Machine Learning AI to predict video games content rating
+                    Supervised Machine Learning AI to predict video games content rating<br />
                     <a class="btn btn-default" href="https://www.slideshare.net/RobertoFalconi4/game-ratings-predictor-machine-learning-software-to-predict-video-games-content-rating">
                         Learn More
                     </a>
@@ -89,7 +86,7 @@
             </a>
             <div class="carousel-caption" role="option">
                 <p>
-                    Online Market: responsive, dynamic website to buy products and get them in a pickup store
+                    Responsive, dynamic website to buy products and get them in a pickup store<br />
                     <a class="btn btn-default" href="https://www.slideshare.net/RobertoFalconi4/online-market-tired-of-waiting-for-your-courier">
                         Learn More
                     </a>
@@ -122,46 +119,3 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
-
-
-<!--
-<div class="row">
-    <div class="col-md-3">
-        <h2>Application uses</h2>
-        <ul>
-            <li>Sample pages using ASP.NET Core MVC</li>
-            <li>Theming using <a href="https://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>How to</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398600">Add a Controller and View</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699315">Manage User Secrets using Secret Manager.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699316">Use logging to log a message.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699317">Add packages using NuGet.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699319">Target development, staging or production environment.</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Overview</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=518008">Conceptual overview of what is ASP.NET Core</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699320">Fundamentals of ASP.NET Core such as Startup and middleware.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398602">Working with Data</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398603">Security</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699321">Client side development</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699322">Develop on different platforms</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699323">Read more on the documentation site</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Run &amp; Deploy</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517851">Run your app</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517853">Run tools such as EF migrations and more</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure Web Apps</a></li>
-        </ul>
-    </div>
-</div>
--->
