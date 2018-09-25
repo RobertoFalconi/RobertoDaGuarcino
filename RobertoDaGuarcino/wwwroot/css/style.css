@@ -1,8 +1,5 @@
 ﻿/* Navbar ====================================== */
 @import url(materialize.css);
-a:hover {
-    color: red !important;
-}
 
 .navbar {
   font-family: "Roboto", sans-serif;
@@ -138,7 +135,7 @@ a:hover {
 .col-red .navbar .nav .open > a,
 .col-red .navbar .nav .open > a:hover,
 .col-red .navbar .nav .open > a:focus {
-  background-color: red; }
+  background-color: white; }
 
 .col-red .navbar .nav > li > a {
   color: #fff; }
