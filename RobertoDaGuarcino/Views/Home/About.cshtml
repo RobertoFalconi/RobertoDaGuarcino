@@ -1,192 +1,178 @@
 ﻿@{
     ViewData["Title"] = "Projects";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
-<head>
-    <!-- Bootstrap core CSS -->
-    <link href="~/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="~/css/4-col-portfolio.css" rel="stylesheet">
+<div class="block-header">
+    <h2>Geeks shall inherith the Earth</h2>
+</div>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        .accordion {
-            background-color: #eee;
-            color: #444;
-            cursor: pointer;
-            padding: 18px;
-            width: 100%;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-size: 15px;
-            transition: 0.4s;
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+    }
+
+        .active, .accordion:hover {
+            background-color: #ccc;
         }
 
-            .active, .accordion:hover {
-                background-color: #ccc;
-            }
-
-            .accordion:after {
-                content: '\002B';
-                color: #777;
-                font-weight: bold;
-                float: right;
-                margin-left: 5px;
-            }
-
-        .active:after {
-            content: "\2212";
+        .accordion:after {
+            content: '\002B';
+            color: #777;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
         }
 
-        .panel {
-            padding: 0 18px;
-            background-color: white;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.2s ease-out;
-        }
-    </style>
+    .active:after {
+        content: "\2212";
+    }
 
-</head>
+    .panel {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+</style>
 
-
-
-
-<!-- Page Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
-            <div class="card h-100">
-                    <iframe frameborder='0' height='330' scrolling='no' src='https://www.hackster.io/99952/suomi-smart-spa-with-stm32-nucleo-board-a562e0/embed'></iframe>
-                
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
-            <div class="card h-100">
-                    <iframe frameborder='0' height='355' scrolling='no' src='https://www.hackster.io/Falkons/house-temperature-monitoring-using-aws-iot-and-raspberry-pi-3b6410/embed'></iframe>
-                
-            </div>
+<div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
+        <div class="card h-100">
+            <iframe frameborder='0' height='330' scrolling='no' src='https://www.hackster.io/99952/suomi-smart-spa-with-stm32-nucleo-board-a562e0/embed'></iframe>
         </div>
     </div>
-    <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
-            <div class="card h-100">
-                <a href="https://www.slideshare.net/RobertoFalconi4/bb8-run-a-star-wars-video-game-116261976"><img class="card-img-top" src="~/images/BB8Run-ALT_small.png" alt=""></a>
-                <div class="card-body">
-                    <h4 class="card-title">
-                        <a href="https://www.slideshare.net/RobertoFalconi4/bb8-run-a-star-wars-video-game-116261976">BB-8 RUN</a>
-                    </h4>
-                    <p class="card-text"> 3D endless runner video game based on Star Wars universe</p>
-                    <button class="accordion">Presentation</button>
-                    <div class="panel">
-                        <iframe src="//www.slideshare.net/slideshow/embed_code/key/FNaxd7qaynDAHx" width="340" height="200" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-                        <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/RobertoFalconi4/bb8-run-a-star-wars-video-game-116261976" title="BB8 RUN - A Star Wars video game" target="_blank">BB8 RUN - A Star Wars video game</a> </strong> from <strong><a href="https://www.slideshare.net/RobertoFalconi4" target="_blank">Roberto Falconi</a></strong> </div>
-                    </div>
-                </div>
-            </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
+        <div class="card h-100">
+            <iframe frameborder='0' height='355' scrolling='no' src='https://www.hackster.io/Falkons/house-temperature-monitoring-using-aws-iot-and-raspberry-pi-3b6410/embed'></iframe>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
-            <div class="card h-100">
-                <a href="https://www.slideshare.net/RobertoFalconi4/suomi-initial-concept-user-evaluation"><img class="card-img-top" src="~/images/SUOMI_small.png" alt=""></a>
-                <div class="card-body">
-                    <h4 class="card-title">
-                        <a href="https://www.slideshare.net/RobertoFalconi4/suomi-initial-concept-user-evaluation">SUOMI</a>
-                    </h4>
-                    <p class="card-text">Software that guide users of a spa in the best possible journey using IoT</p>
-                    <button class="accordion">Presentation</button>
-                    <div class="panel">
-                        <iframe src="//www.slideshare.net/slideshow/embed_code/key/7Kdq0h1NN4I8Un" width="340" height="200" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/RobertoFalconi4/suomi-initial-concept-user-evaluation" title="SUOMI Part 1 - Initial concept &amp; User evaluation" target="_blank">SUOMI Part 1 - Initial concept &amp; User evaluation</a> </strong> from <strong><a href="//www.slideshare.net/RobertoFalconi4" target="_blank">Roberto Falconi</a></strong> </div>
-                        <iframe src="//www.slideshare.net/slideshow/embed_code/key/AWo9CWoAVCdjqM" width="340" height="200" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/RobertoFalconi4/suomi-mvp-step" title="SUOMI Part 2 - MVP step" target="_blank">SUOMI Part 2 - MVP step</a> </strong> from <strong><a href="https://www.slideshare.net/RobertoFalconi4" target="_blank">Roberto Falconi</a></strong> </div>
-                        <iframe src="//www.slideshare.net/slideshow/embed_code/key/1NkUcNNgqeumUB" width="340" height="200" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/RobertoFalconi4/suomi-final-product" title="SUOMI Part 3 - Final product" target="_blank">SUOMI Part 3 - Final product</a> </strong> from <strong><a href="https://www.slideshare.net/RobertoFalconi4" target="_blank">Roberto Falconi</a></strong> </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
-            <div class="card h-100">
-                <a href="https://www.slideshare.net/RobertoFalconi4/house-temperature-monitoring-using-aws-iot-and-raspberry-pi"><img class="card-img-top" src="~/images/AWS_small.png" alt=""></a>
-                <div class="card-body">
-                    <h4 class="card-title">
-                        <a href="https://www.slideshare.net/RobertoFalconi4/house-temperature-monitoring-using-aws-iot-and-raspberry-pi">House temperature monitoring using AWS IoT</a>
-                    </h4>
-                    <p class="card-text">Smart home automation: measure your house temperature and send it on your devices</p>
-                    <button class="accordion">Presentation</button>
-                    <div class="panel">
-                        <iframe src="//www.slideshare.net/slideshow/embed_code/key/lSH9xQuSh2zYhQ" width="595" height="200" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/RobertoFalconi4/house-temperature-monitoring-using-aws-iot-and-raspberry-pi" title="House Temperature Monitoring using AWS IoT And Raspberry Pi" target="_blank">House Temperature Monitoring using AWS IoT And Raspberry Pi</a> </strong> from <strong><a href="https://www.slideshare.net/RobertoFalconi4" target="_blank">Roberto Falconi</a></strong> </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
     </div>
-    <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
-            <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="~/images/Kalypso_small.png" alt=""></a>
-                <div class="card-body">
-                    <h4 class="card-title">
-                        <a href="#">Kalypso</a>
-                    </h4>
-                    <p class="card-text">Software to encrypt messages and to send them via any social or IM</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
-            <div class="card h-100">
-                <a href="https://www.slideshare.net/RobertoFalconi4/game-ratings-predictor-machine-learning-software-to-predict-video-games-content-rating"><img class="card-img-top" src="~/images/Gaming_small.png" alt=""></a>
-                <div class="card-body">
-                    <h4 class="card-title">
-                        <a href="https://www.slideshare.net/RobertoFalconi4/game-ratings-predictor-machine-learning-software-to-predict-video-games-content-rating">Game Ratings Predictor</a>
-                    </h4>
-                    <p class="card-text">Supervised Machine Learning AI to predict video games content rating</p>
-                    <button class="accordion">Presentation</button>
-                    <div class="panel">
-                        <iframe src="//www.slideshare.net/slideshow/embed_code/key/6ryfDmV7DupTqX" width="425" height="200" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/RobertoFalconi4/game-ratings-predictor-machine-learning-software-to-predict-video-games-content-rating" title="Game Ratings Predictor - machine learning software to predict video games content rating" target="_blank">Game Ratings Predictor - machine learning software to predict video games content rating</a> </strong> from <strong><a href="//www.slideshare.net/RobertoFalconi4" target="_blank">Roberto Falconi</a></strong> </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
-            <div class="card h-100">
-                <a href="https://www.slideshare.net/RobertoFalconi4/online-market-tired-of-waiting-for-your-courier"><img class="card-img-top" src="~/images/Market_small.png" alt=""></a>
-                <div class="card-body">
-                    <h4 class="card-title">
-                        <a href="https://www.slideshare.net/RobertoFalconi4/online-market-tired-of-waiting-for-your-courier">Online Market</a>
-                    </h4>
-                    <p class="card-text">Responsive, dynamic website to buy products and get them in a pickup store</p>
-                    <button class="accordion">Presentation</button>
-                    <div class="panel">
-                        <iframe src="//www.slideshare.net/slideshow/embed_code/key/MoVPW0DNIViGgc" width="595" height="200" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/RobertoFalconi4/online-market-tired-of-waiting-for-your-courier" title="Online Market - Tired of waiting for your courier?" target="_blank">Online Market - Tired of waiting for your courier?</a> </strong> from <strong><a href="//www.slideshare.net/RobertoFalconi4" target="_blank">Roberto Falconi</a></strong> </div>
-                    </div>
+</div>
+<div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
+        <div class="card h-100">
+            <a href="https://www.slideshare.net/RobertoFalconi4/bb8-run-a-star-wars-video-game-116261976"><img class="card-img-top" src="~/images/BB8Run-ALT_small.png" alt=""></a>
+            <div class="card-body">
+                <h4 class="card-title">
+                    <a href="https://www.slideshare.net/RobertoFalconi4/bb8-run-a-star-wars-video-game-116261976">BB-8 RUN</a>
+                </h4>
+                <p class="card-text"> 3D endless runner video game based on Star Wars universe</p>
+                <button class="accordion">Presentation</button>
+                <div class="panel">
+                    <iframe src="//www.slideshare.net/slideshow/embed_code/key/FNaxd7qaynDAHx" width="340" height="200" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+                    <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/RobertoFalconi4/bb8-run-a-star-wars-video-game-116261976" title="BB8 RUN - A Star Wars video game" target="_blank">BB8 RUN - A Star Wars video game</a> </strong> from <strong><a href="https://www.slideshare.net/RobertoFalconi4" target="_blank">Roberto Falconi</a></strong> </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
-            <div class="card h-100">
-                <img class="card-img-top" src="~/images/CMS_small.png" alt="">
-                <div class="card-body">
-                    <h4 class="card-title">
-                        CMS for Augmented Reality Websites
-                    </h4>
-                    <p class="card-text">CMS to let users create (without coding skills) AR websites using 360° pics and Google API</p>
+    <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
+        <div class="card h-100">
+            <a href="https://www.slideshare.net/RobertoFalconi4/suomi-initial-concept-user-evaluation"><img class="card-img-top" src="~/images/SUOMI_small.png" alt=""></a>
+            <div class="card-body">
+                <h4 class="card-title">
+                    <a href="https://www.slideshare.net/RobertoFalconi4/suomi-initial-concept-user-evaluation">SUOMI</a>
+                </h4>
+                <p class="card-text">Software that guide users of a spa in the best possible journey using IoT</p>
+                <button class="accordion">Presentation</button>
+                <div class="panel">
+                    <iframe src="//www.slideshare.net/slideshow/embed_code/key/7Kdq0h1NN4I8Un" width="340" height="200" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/RobertoFalconi4/suomi-initial-concept-user-evaluation" title="SUOMI Part 1 - Initial concept &amp; User evaluation" target="_blank">SUOMI Part 1 - Initial concept &amp; User evaluation</a> </strong> from <strong><a href="//www.slideshare.net/RobertoFalconi4" target="_blank">Roberto Falconi</a></strong> </div>
+                    <iframe src="//www.slideshare.net/slideshow/embed_code/key/AWo9CWoAVCdjqM" width="340" height="200" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/RobertoFalconi4/suomi-mvp-step" title="SUOMI Part 2 - MVP step" target="_blank">SUOMI Part 2 - MVP step</a> </strong> from <strong><a href="https://www.slideshare.net/RobertoFalconi4" target="_blank">Roberto Falconi</a></strong> </div>
+                    <iframe src="//www.slideshare.net/slideshow/embed_code/key/1NkUcNNgqeumUB" width="340" height="200" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/RobertoFalconi4/suomi-final-product" title="SUOMI Part 3 - Final product" target="_blank">SUOMI Part 3 - Final product</a> </strong> from <strong><a href="https://www.slideshare.net/RobertoFalconi4" target="_blank">Roberto Falconi</a></strong> </div>
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
-            <div class="card h-100">
-                <img class="card-img-top" src="~/images/Android_small.png" alt="">
-                <div class="card-body">
-                    <h4 class="card-title">
-                        Android and Chrome OS video games
-                    </h4>
-                    <p class="card-text">Video games for Android's Google Play and Chrome Web Store</p>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
+        <div class="card h-100">
+            <a href="https://www.slideshare.net/RobertoFalconi4/house-temperature-monitoring-using-aws-iot-and-raspberry-pi"><img class="card-img-top" src="~/images/AWS_small.png" alt=""></a>
+            <div class="card-body">
+                <h4 class="card-title">
+                    <a href="https://www.slideshare.net/RobertoFalconi4/house-temperature-monitoring-using-aws-iot-and-raspberry-pi">House temperature monitoring</a>
+                </h4>
+                <p class="card-text">Measure your house temperature and send it on your devices</p>
+                <button class="accordion">Presentation</button>
+                <div class="panel">
+                    <iframe src="//www.slideshare.net/slideshow/embed_code/key/lSH9xQuSh2zYhQ" width="595" height="200" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/RobertoFalconi4/house-temperature-monitoring-using-aws-iot-and-raspberry-pi" title="House Temperature Monitoring using AWS IoT And Raspberry Pi" target="_blank">House Temperature Monitoring using AWS IoT And Raspberry Pi</a> </strong> from <strong><a href="https://www.slideshare.net/RobertoFalconi4" target="_blank">Roberto Falconi</a></strong> </div>
                 </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
+        <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="~/images/Kalypso_small.png" alt=""></a>
+            <div class="card-body">
+                <h4 class="card-title">
+                    <a href="#">Kalypso</a>
+                </h4>
+                <p class="card-text">Software to encrypt messages and to send them via any social or IM</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
+        <div class="card h-100">
+            <a href="https://www.slideshare.net/RobertoFalconi4/game-ratings-predictor-machine-learning-software-to-predict-video-games-content-rating"><img class="card-img-top" src="~/images/Gaming_small.png" alt=""></a>
+            <div class="card-body">
+                <h4 class="card-title">
+                    <a href="https://www.slideshare.net/RobertoFalconi4/game-ratings-predictor-machine-learning-software-to-predict-video-games-content-rating">Game Ratings Predictor</a>
+                </h4>
+                <p class="card-text">Supervised Machine Learning AI to predict video games content rating</p>
+                <button class="accordion">Presentation</button>
+                <div class="panel">
+                    <iframe src="//www.slideshare.net/slideshow/embed_code/key/6ryfDmV7DupTqX" width="425" height="200" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/RobertoFalconi4/game-ratings-predictor-machine-learning-software-to-predict-video-games-content-rating" title="Game Ratings Predictor - machine learning software to predict video games content rating" target="_blank">Game Ratings Predictor - machine learning software to predict video games content rating</a> </strong> from <strong><a href="//www.slideshare.net/RobertoFalconi4" target="_blank">Roberto Falconi</a></strong> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
+        <div class="card h-100">
+            <a href="https://www.slideshare.net/RobertoFalconi4/online-market-tired-of-waiting-for-your-courier"><img class="card-img-top" src="~/images/Market_small.png" alt=""></a>
+            <div class="card-body">
+                <h4 class="card-title">
+                    <a href="https://www.slideshare.net/RobertoFalconi4/online-market-tired-of-waiting-for-your-courier">Online Market</a>
+                </h4>
+                <p class="card-text">Responsive, dynamic website to buy products and get them in a pickup store</p>
+                <button class="accordion">Presentation</button>
+                <div class="panel">
+                    <iframe src="//www.slideshare.net/slideshow/embed_code/key/MoVPW0DNIViGgc" width="595" height="200" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/RobertoFalconi4/online-market-tired-of-waiting-for-your-courier" title="Online Market - Tired of waiting for your courier?" target="_blank">Online Market - Tired of waiting for your courier?</a> </strong> from <strong><a href="//www.slideshare.net/RobertoFalconi4" target="_blank">Roberto Falconi</a></strong> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
+        <div class="card h-100">
+            <img class="card-img-top" src="~/images/CMS_small.png" alt="">
+            <div class="card-body">
+                <h4 class="card-title">
+                    CMS for Augmented Reality Websites
+                </h4>
+                <p class="card-text">CMS to let users create (without coding skills) AR websites using 360° pics and Google API</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
+        <div class="card h-100">
+            <img class="card-img-top" src="~/images/Android_small.png" alt="">
+            <div class="card-body">
+                <h4 class="card-title">
+                    Android and Chrome OS video games
+                </h4>
+                <p class="card-text">Video games for Android's Google Play and Chrome Web Store</p>
             </div>
         </div>
     </div>
