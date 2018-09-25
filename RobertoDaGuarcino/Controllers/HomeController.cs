@@ -17,21 +17,21 @@ namespace RobertoDaGuarcino.Controllers
             return View();
         }
 
-        public IActionResult About()
+        public IActionResult MyProjects()
         {
             ViewData["Message"] = "Something about my projects";
 
             return View();
         }
 
-        public IActionResult Contact()
+        public IActionResult MyContacts()
         {
             ViewData["Message"] = "Get in touch with Roberto";
 
             return View();
         }
 
-        public IActionResult PCGaming()
+        public IActionResult MyGames()
         {
 
             return View();
