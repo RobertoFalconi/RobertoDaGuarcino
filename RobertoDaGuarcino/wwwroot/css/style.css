@@ -38,9 +38,7 @@
       font-size: 26px; }
   .navbar .navbar-collapse.in {
     overflow: visible; }
-  a.navbar:hover{
-      color:red !important;
-  }
+
 .ls-closed .sidebar {
   margin-left: -300px; }
 
