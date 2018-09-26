@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to Roberto da Guarcino</title>
     <!-- Favicon-->
     <link rel="icon" href="~/favicon.ico" type="image/x-icon">
@@ -59,6 +60,10 @@
 
     <!-- Custom styles for this template -->
     <link href="~/css/4-col-portfolio.css" rel="stylesheet">
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
 
 </head>
 
@@ -164,12 +169,8 @@
 
 
 <!--
-<!DOCTYPE html>
-<html>
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Roberto da Guarcino</title>
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -182,6 +183,7 @@
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
 </head>
+
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
@@ -242,6 +244,6 @@
 
     @RenderSection("Scripts", required: false)
 </body>
-</html>
+
 
 -->
