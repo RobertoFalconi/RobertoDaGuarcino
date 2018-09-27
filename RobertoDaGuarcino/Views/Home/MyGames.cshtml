@@ -2,84 +2,232 @@
     ViewData["Title"] = "MyGames";
 }
 
+<head>
+    <!-- Jquery Core Js -->
+    <script src="~/plugins/jquery/jquery.min.js"></script>
+    <script src="~/plugins/jquery-countto/jquery.countTo.js"></script>
+    <!-- Wait Me Plugin Js -->
+    <script src="~/plugins/waitme/waitMe.js"></script>
+    <!-- Custom Js -->
+    <script src="~/js/admin.js"></script>
+    <script src="~/js/pages/cards/colored.js"></script>
+</head>
+
 <div class="block-header">
     <h2>🎮 “We all make choices, but in the end, our choices make us.” - Andrew Ryan</h2>
 </div>
 <!-- Widgets -->
 <div class="row clearfix">
     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-        <div class="info-box bg-grey hover-expand-effect">
-            <div class="icon">
-                <i class="material-icons">mouse</i>
-            </div>
-            <div class="content">
-                <div class="text">Steam Achievements</div>
-                <div class="number count-to" data-from="0" data-to="910" data-speed="1000" data-fresh-interval="20"></div>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-        <div class="info-box bg-green hover-expand-effect">
-            <div class="icon">
-                <i class="material-icons">videogame_asset</i>
-            </div>
-            <div class="content">
-                <div class="text">Xbox Gamerscore</div>
-                <div class="number count-to" data-from="0" data-to="32895" data-speed="1000" data-fresh-interval="20"></div>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-        <div class="info-box bg-light-blue hover-expand-effect">
-            <div class="icon">
-                <i class="material-icons">stars</i>
-            </div>
-            <div class="content">
-                <div class="text">PlayStation Trophies</div>
-                <div class="number count-to" data-from="0" data-to="1038" data-speed="1000" data-fresh-interval="20"></div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- #END# Widgets -->
-<!-- CPU Usage -->
-<div class="row clearfix">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <div class="card">
-            <div class="header">
-                <div class="row clearfix">
-                    <div class="col-xs-12 col-sm-6">
-                        <h2>CPU USAGE (%)</h2>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 align-right">
-                        <div class="switch panel-switch-btn">
-                            <span class="m-r-10 font-12">REAL TIME</span>
-                            <label>OFF<input type="checkbox" id="realtime" checked><span class="lever switch-col-cyan"></span>ON</label>
-                        </div>
-                    </div>
-                </div>
+            <div class="header bg-blue-grey">
+                <h2>
+                    <img src="~/images/steampng.png" style="width:50px" /> Steam<small>Levels and Achievements</small>
+                </h2>
                 <ul class="header-dropdown m-r--5">
-                    <li class="dropdown">
-                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            <i class="material-icons">more_vert</i>
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="cardloading" data-loading-effect="rotation" data-loading-color="lightGreen">
+                            <i class="material-icons">loop</i>
                         </a>
-                        <ul class="dropdown-menu pull-right">
-                            <li><a href="javascript:void(0);">Action</a></li>
-                            <li><a href="javascript:void(0);">Another action</a></li>
-                            <li><a href="javascript:void(0);">Something else here</a></li>
-                        </ul>
                     </li>
                 </ul>
             </div>
             <div class="body">
-                <div id="real_time_chart" class="dashboard-flot-chart"></div>
+                <div class="info-box bg-grey hover-expand-effect">
+                    <div class="icon">
+                        <i class="material-icons">mouse</i>
+                    </div>
+                    <div class="content">
+                        <div class="text">Steam Level</div>
+                        <div class="number count-to" data-from="0" data-to="15" data-speed="1000" data-fresh-interval="20"></div>
+                    </div>
+                </div>
+                <div class="info-box bg-grey hover-expand-effect">
+                    <div class="icon">
+                        <i class="material-icons">mouse</i>
+                    </div>
+                    <div class="content">
+                        <div class="text">Steam Achievements</div>
+                        <div class="number count-to" data-from="0" data-to="910" data-speed="1000" data-fresh-interval="20"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="card">
+            <div class="header bg-green">
+                <h2>
+                    <img src="~/images/xbox.png" style="width:50px" /> Xbox<small>Gamerscore and Achievements</small>
+                </h2>
+                <ul class="header-dropdown m-r--5">
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="cardloading" data-loading-effect="rotation" data-loading-color="lightGreen">
+                            <i class="material-icons">loop</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="body">
+                <div class="info-box bg-green hover-expand-effect">
+                    <div class="icon">
+                        <i class="material-icons">videogame_asset</i>
+                    </div>
+                    <div class="content">
+                        <div class="text">Xbox Gamerscore</div>
+                        <div class="number count-to" data-from="0" data-to="32895" data-speed="1000" data-fresh-interval="20"></div>
+                    </div>
+                </div>
+                <div class="info-box bg-green hover-expand-effect">
+                    <div class="icon">
+                        <i class="material-icons">videogame_asset</i>
+                    </div>
+                    <div class="content">
+                        <div class="text">Xbox Gamerscore</div>
+                        <div class="number count-to" data-from="0" data-to="1553" data-speed="1000" data-fresh-interval="20"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="card">
+            <div class="header bg-light-blue">
+                <h2>
+                    <img src="~/images/ps.svg" style="width:50px" /> PlayStation<small>Levels and Trophies</small>
+                </h2>
+                <ul class="header-dropdown m-r--5">
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="cardloading" data-loading-effect="rotation" data-loading-color="lightGreen">
+                            <i class="material-icons">loop</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="body">
+                <div class="info-box bg-light-blue hover-expand-effect">
+                    <div class="icon">
+                        <i class="material-icons">stars</i>
+                    </div>
+                    <div class="content">
+                        <div class="text">PlayStation Level</div>
+                        <div class="number count-to" data-from="0" data-to="13" data-speed="1000" data-fresh-interval="20"></div>
+                    </div>
+                </div>
+                <div class="info-box bg-light-blue hover-expand-effect">
+                    <div class="icon">
+                        <i class="material-icons">stars</i>
+                    </div>
+                    <div class="content">
+                        <div class="text">PlayStation Trophies</div>
+                        <div class="number count-to" data-from="0" data-to="1038" data-speed="1000" data-fresh-interval="20"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<!-- #END# CPU Usage -->
 
+<br />
 <div class="row clearfix">
-
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="card">
+            <div class="header bg-blue">
+                <h2>
+                    <img src="~/images/battle-net.png" style="width:50px" /> Blizzard Battle.net<small>Levels and Achievements</small>
+                </h2>
+                <ul class="header-dropdown m-r--5">
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="cardloading" data-loading-effect="rotation" data-loading-color="lightGreen">
+                            <i class="material-icons">loop</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="body">
+                <div class="info-box bg-blue hover-expand-effect">
+                    <div class="icon">
+                        <i class="material-icons">mouse</i>
+                    </div>
+                    <div class="content">
+                        <div class="text">Blizzard Achievements</div>
+                        <div class="number count-to" data-from="0" data-to="455" data-speed="1000" data-fresh-interval="20"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="card">
+            <div class="header bg-deep-orange">
+                <h2>
+                    <img src="~/images/origin.png" style="width:50px" /> Electronic Arts Origin<small>Gamerscore and Achievements</small>
+                </h2>
+                <ul class="header-dropdown m-r--5">
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="cardloading" data-loading-effect="rotation" data-loading-color="lightGreen">
+                            <i class="material-icons">loop</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="body">
+                <div class="info-box bg-deep-orange hover-expand-effect">
+                    <div class="icon">
+                        <i class="material-icons">videogame_asset</i>
+                    </div>
+                    <div class="content">
+                        <div class="text">Origin Points</div>
+                        <div class="number count-to" data-from="0" data-to="1050" data-speed="1000" data-fresh-interval="20"></div>
+                    </div>
+                </div>
+                <div class="info-box bg-deep-orange hover-expand-effect">
+                    <div class="icon">
+                        <i class="material-icons">videogame_asset</i>
+                    </div>
+                    <div class="content">
+                        <div class="text">Origin Achievements</div>
+                        <div class="number count-to" data-from="0" data-to="60" data-speed="1000" data-fresh-interval="20"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @*<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="card">
+            <div class="header bg-amber">
+                <h2>
+                    <img src="~/images/rockstar-games.png" style="width:50px" /> Rockstar Social Club<small>Levels and Trophies</small>
+                </h2>
+                <ul class="header-dropdown m-r--5">
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="cardloading" data-loading-effect="rotation" data-loading-color="lightGreen">
+                            <i class="material-icons">loop</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="body">
+                <div class="info-box bg-amber hover-expand-effect">
+                    <div class="icon">
+                        <i class="material-icons">stars</i>
+                    </div>
+                    <div class="content">
+                        <div class="text">Rockstar Level</div>
+                        <div class="number count-to" data-from="0" data-to="13" data-speed="1000" data-fresh-interval="20"></div>
+                    </div>
+                </div>
+                <div class="info-box bg-amber hover-expand-effect">
+                    <div class="icon">
+                        <i class="material-icons">stars</i>
+                    </div>
+                    <div class="content">
+                        <div class="text">Rockstar Trophies</div>
+                        <div class="number count-to" data-from="0" data-to="1038" data-speed="1000" data-fresh-interval="20"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>*@
 </div>
-
+<!-- #END# Widgets -->
