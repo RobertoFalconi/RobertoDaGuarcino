@@ -76,9 +76,7 @@
     <!-- Custom Js -->
     <script src="../../js/pages/ui/dialogs.js"></script>
 </head>
-
-<body class="theme-red">
-
+<body class="theme-red ls-closed">
     <!-- Page Loader -->
     <div class="page-loader-wrapper">
         <div class="loader">
@@ -96,6 +94,11 @@
         </div>
     </div>
     <!-- #END# Page Loader -->
+
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+    <!-- #END# Overlay For Sidebars -->
+
     <!-- Top Bar -->
     <nav class="navbar">
         <div class="container-fluid">
@@ -106,6 +109,7 @@
         </div>
     </nav>
     <!-- #END# Top Bar -->
+
     <!-- Left Sidebar -->
     <aside id="leftsidebar" class="sidebar">
 
@@ -117,6 +121,16 @@
             <div class="info-container">
                 <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Roberto Da Guarcino</div>
                 <div class="email">Is the new Da Vinci</div>
+                <div class="btn-group user-helper-dropdown">
+                    <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
+                    <ul class="dropdown-menu pull-right">
+                        <li><a href="https://www.linkedin.com/in/Roberto-Falconi" class=" waves-effect waves-block"><i class="material-icons">person</i>LinkedIn</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="https://www.slideshare.net/RobertoFalconi4" class=" waves-effect waves-block"><i class="material-icons">slideshow</i>SlideShare</a></li>
+                        <li><a href="https://github.com/RobertoFalconi" class=" waves-effect waves-block"><i class="material-icons">code</i>GitHub</a></li>
+                        <li><a href="https://www.hackster.io/Falkons" class=" waves-effect waves-block"><i class="material-icons">memory</i>Hackster</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <!-- #User Info -->
@@ -154,6 +168,7 @@
 
     </aside>
     <!-- #END# Left Sidebar -->
+
     <!-- START BODY -->
     <section class="content">
         <div class="container-fluid">
@@ -163,4 +178,7 @@
     <!-- #END# BODY -->
 
 </body>
+
+
+
 </html>
