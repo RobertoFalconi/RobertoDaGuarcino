@@ -12,9 +12,38 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="css/themes/all-themes.css" rel="stylesheet">
+    <style type="text/css">
+        .jqstooltip {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            visibility: hidden;
+            background: rgb(0, 0, 0) transparent;
+            background-color: rgba(0,0,0,0.6);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+            color: white;
+            font: 10px arial, san serif;
+            text-align: left;
+            white-space: nowrap;
+            padding: 5px;
+            border: 1px solid white;
+            box-sizing: content-box;
+            z-index: 10000;
+        }
+
+        .jqsfield {
+            color: white;
+            font: 10px arial, san serif;
+            text-align: left;
+        }
+    </style>
 
     <!-- Bootstrap Core Css -->
     <link href="~/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
     <!-- Waves Effect Css -->
     <link href="~/plugins/node-waves/waves.css" rel="stylesheet" />
     <!-- Animation Css -->
@@ -29,48 +58,28 @@
     <link href="~/css/themes/theme-red.css" rel="stylesheet" />
     <!-- Light Gallery Plugin Css -->
     <link href="~/plugins/light-gallery/css/lightgallery.css" rel="stylesheet">
-    <!-- Sweetalert Css -->
-    <link href="../../plugins/sweetalert/sweetalert.css" rel="stylesheet" />
+
 
     <!-- Jquery Core Js -->
-    <script src="~/plugins/jquery/jquery.min.js"></script>
-    <!-- Bootstrap Core Js -->
-    <script src="~/plugins/bootstrap/js/bootstrap.js"></script>
-    <!-- Select Plugin Js -->
-    <script src="~/plugins/bootstrap-select/js/bootstrap-select.js"></script>
+    <script src="~/plugins/jquery/jquery.js"></script>
+    <!-- Custom Js -->
+    <script src="~/js/pages/index.js"></script>
+    <!-- Jquery Core Js -->
+    <script src="~/plugins/jquery/jquery.js"></script>
+    <!-- Jquery Core Js -->
+    <script src="~/plugins/jquery-countto/jquery.countTo.js"></script>
     <!-- Slimscroll Plugin Js -->
     <script src="~/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
     <!-- Waves Effect Plugin Js -->
     <script src="~/plugins/node-waves/waves.js"></script>
-    <!-- Morris Plugin Js -->
-    <script src="~/plugins/raphael/raphael.min.js"></script>
-    <script src="~/plugins/morrisjs/morris.js"></script>
-    <!-- ChartJs -->
-    <script src="~/plugins/chartjs/Chart.bundle.js"></script>
-    <!-- Flot Charts Plugin Js -->
-    <script src="~/plugins/flot-charts/jquery.flot.js"></script>
-    <script src="~/plugins/flot-charts/jquery.flot.resize.js"></script>
-    <script src="~/plugins/flot-charts/jquery.flot.pie.js"></script>
-    <script src="~/plugins/flot-charts/jquery.flot.categories.js"></script>
-    <script src="~/plugins/flot-charts/jquery.flot.time.js"></script>
-    <!-- Sparkline Chart Plugin Js -->
-    <script src="~/plugins/jquery-sparkline/jquery.sparkline.js"></script>
-    <!-- Custom Js -->
-    <script src="~/js/pages/index.js"></script>
-    <!-- Demo Js -->
-    <script src="~/js/demo.js"></script>
-    <!-- Jquery Core Js -->
-    <script src="~/plugins/jquery/jquery.min.js"></script>
-    <script src="~/plugins/jquery-countto/jquery.countTo.js"></script>
     <!-- Wait Me Plugin Js -->
     <script src="~/plugins/waitme/waitMe.js"></script>
     <!-- Custom Js -->
     <script src="~/js/admin.js"></script>
     <script src="~/js/pages/cards/colored.js"></script>
-    <!-- SweetAlert Plugin Js -->
-    <script src="../../plugins/sweetalert/sweetalert.min.js"></script>
-    <!-- Custom Js -->
-    <script src="../../js/pages/ui/dialogs.js"></script>
+    <!-- Bootstrap Core Js -->
+    <script src="~/plugins/bootstrap/js/bootstrap.js"></script>
+
 </head>
 <body class="theme-red ls-closed">
     <!-- Page Loader -->
@@ -90,11 +99,9 @@
         </div>
     </div>
     <!-- #END# Page Loader -->
-
     <!-- Overlay For Sidebars -->
     <div class="overlay"></div>
     <!-- #END# Overlay For Sidebars -->
-
     <!-- Top Bar -->
     <nav class="navbar">
         <div class="container-fluid">
@@ -105,7 +112,6 @@
         </div>
     </nav>
     <!-- #END# Top Bar -->
-
     <!-- Left Sidebar -->
     <aside id="leftsidebar" class="sidebar">
 
@@ -164,7 +170,6 @@
 
     </aside>
     <!-- #END# Left Sidebar -->
-
     <!-- START BODY -->
     <section class="content">
         <div class="container-fluid">
