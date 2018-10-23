@@ -15,9 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Update="wwwroot\images\bannerx.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Folder Include="wwwroot\images\banner\" />
+    <Folder Include="wwwroot\images\logo\" />
+    <Folder Include="wwwroot\images\exophase\" />
   </ItemGroup>
 
 </Project>
