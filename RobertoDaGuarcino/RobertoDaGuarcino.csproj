@@ -14,10 +14,4 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\images\banner\" />
-    <Folder Include="wwwroot\images\logo\" />
-    <Folder Include="wwwroot\images\exophase\" />
-  </ItemGroup>
-
 </Project>
