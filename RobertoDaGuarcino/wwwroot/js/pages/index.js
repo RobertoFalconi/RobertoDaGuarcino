@@ -82,7 +82,7 @@ function initDonutChart() {
             value: 58
         }, {
             label: 'Nintendo',
-            value: 150
+            value: 156
         }],
         colors: ['grey', 'green', 'blue', 'red'],
         formatter: function (y) {
