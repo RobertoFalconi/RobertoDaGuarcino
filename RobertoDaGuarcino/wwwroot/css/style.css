@@ -8041,3 +8041,45 @@ html.ie11 .dropdown-menu ul.menu li a {
 html.ie11 .bs-searchbox .form-control {
   width: 90%; }
 
+::-webkit-scrollbar {
+    width: 0.8em;
+    height: 0.8em;
+    background: #eaeaea;
+    margin-right: 10px;
+    border: 2px;
+    border-color: #eee;
+}
+
+    ::-webkit-scrollbar:hover {
+        background-color: #eaeaea;
+        border: 2px;
+        border-color: #eee;
+    }
+
+::-webkit-resizer {
+    -webkit-border-radius: 4px;
+    background-color: #eee;
+    border: 2px;
+    border-color: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+    min-height: 0.8em;
+    min-width: 0.8em;
+    -webkit-border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px;
+    border-color: #eee;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(0, 0, 0, 0.4);
+        border: 2px;
+        border-color: #eee;
+    }
+
+    ::-webkit-scrollbar-thumb:active {
+        background-color: rgba(0, 0, 0, 0.2);
+        border: 2px;
+        border-color: #eee;
+    }
