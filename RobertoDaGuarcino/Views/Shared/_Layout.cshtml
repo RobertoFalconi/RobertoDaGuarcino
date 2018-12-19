@@ -20,6 +20,9 @@ number = 0;
          image[number++] = "<img src = '/images/stickman/img-003.gif'  width='300' height = '120' /> "
          image[number++] = "<img src = '/images/stickman/img-004.gif'  width='300' height = '120' /> "
          image[number++] = "<img src = '/images/stickman/img-005.gif'  width='300' height = '120' /> "
+         image[number++] = "<img src = '/images/stickman/img-006.gif'  width='300' height = '120' /> "
+         image[number++] = "<img src = '/images/stickman/img-007.gif'  width='300' height = '120' /> "
+         image[number++] = "<img src = '/images/stickman/img-008.gif'  width='300' height = '120' /> "
              
 
 increment = Math.floor(Math.random() * number);
@@ -203,13 +206,14 @@ increment = Math.floor(Math.random() * number);
                 <li id="mycontacts" class="menu-active">
                     <a asp-area="" asp-controller="Home" asp-action="MyContacts"><i class="material-icons">contacts</i><span>My Contacts</span></a>
                 </li>
+                @*stickman*@
                 <li id="stickman" style="max-width:50px;max-height:50px;">
 
                     <script language="JavaScript">
                         document.write(image[increment]);
                     </script>
                 </li>
-
+                @*stickman*@
             </ul>
         </div>
         <!-- #Menu -->
