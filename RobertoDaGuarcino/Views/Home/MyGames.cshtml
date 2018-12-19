@@ -1,6 +1,11 @@
 ﻿@{
     ViewData["Title"] = "MyGames";
 }
+<style>
+    html {
+        animation: 1s ease-out 0s 1 slideInFromRight;
+    }
+</style>
 
 <script>
     $('#mygames').addClass('active');
@@ -13,21 +18,26 @@
 <div class="row clearfix">
     <!-- #START Carousel -->
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
         <div class="card">
-            <div class="header bg-red">
-                <h2>
-                    <img src="~/images/logo/pcgaming.png" style="width:50px" /> Humanity Destroyer<small>Pics</small>
-                </h2>
-                <ul class="header-dropdown m-r--5">
-                    <li class="dropdown">
-                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
-                            <i class="material-icons">more_vert</i>
-                        </a>
-                        <ul class="dropdown-menu pull-right">
-                            <li><a href="https://pcpartpicker.com/b/d8mqqs" class=" waves-effect waves-block">PC Part Picker Build</a></li>
-                        </ul>
-                    </li>
-                </ul>
+            <div class="pulse">
+                <div class="header bg-red ">
+
+                    <h2>
+                        <img src="~/images/logo/pcgaming.png" style="width:50px" /> Humanity Destroyer<small>Pics</small>
+                    </h2>
+
+                    <ul class="header-dropdown m-r--5">
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                                <i class="material-icons">more_vert</i>
+                            </a>
+                            <ul class="dropdown-menu pull-right">
+                                <li><a href="https://pcpartpicker.com/b/d8mqqs" class=" waves-effect waves-block">PC Part Picker Build</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="body">
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="z-index: 1;">
@@ -83,157 +93,163 @@
                 </div>
             </div>
         </div>
+
+
         <!-- #START donut chart -->
-            <div class="card">
+        <div class="card">
+            <div class="pulse">
                 <div class="header bg-red">
                     <h2>
                         <img src="~/images/logo/pcgaming.png" style="width:50px" /> Overall stats<small>Donut chart</small>
                     </h2>
                 </div>
-                <div class="body">
-                    <div id="donut_chart" class="dashboard-donut-chart"></div>
-                </div>
             </div>
+            <div class="body">
+                <div id="donut_chart" class="dashboard-donut-chart"></div>
+            </div>
+        </div>
         <!-- #END# donut chart -->
     </div>
     <!-- #END Carousel -->
     <!-- #START PC Specs -->
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <div class="card">
-            <div class="header bg-red">
-                <h2>
-                    <img src="~/images/logo/pcgaming.png" style="width:50px" /> PC Build<small>Components</small>
-                </h2>
-                <ul class="header-dropdown m-r--5">
-                    <li class="dropdown">
-                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
-                            <i class="material-icons">more_vert</i>
-                        </a>
-                        <ul class="dropdown-menu pull-right">
-                            <li><a href="https://pcpartpicker.com/b/d8mqqs" class=" waves-effect waves-block">PC Part Picker Build</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="body">
-                <div class="row clearfix">
-                    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
-                        <i class="material-icons">memory</i>
-                    </div>
-                    <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10" style="padding-top: 4px;">
-                        Intel Core i7-8700K
-                    </div>
+            <div class="pulse">
+                <div class="header bg-red">
+                    <h2>
+                        <img src="~/images/logo/pcgaming.png" style="width:50px" /> PC Build<small>Components</small>
+                    </h2>
+                    <ul class="header-dropdown m-r--5">
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                                <i class="material-icons">more_vert</i>
+                            </a>
+                            <ul class="dropdown-menu pull-right">
+                                <li><a href="https://pcpartpicker.com/b/d8mqqs" class=" waves-effect waves-block">PC Part Picker Build</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-                <div class="row clearfix">
-                    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
-                        <i class="material-icons">graphic_eq</i>
-                    </div>
-                    <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10" style="padding-top: 4px;">
-                        Nvidia GeForce RTX 2080
-                    </div>
                 </div>
-                <div class="row clearfix">
-                    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
-                        <i class="material-icons">nfc</i>
+                <div class="body">
+                    <div class="row clearfix">
+                        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
+                            <i class="material-icons">memory</i>
+                        </div>
+                        <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10" style="padding-top: 4px;">
+                            Intel Core i7-8700K
+                        </div>
                     </div>
-                    <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10" style="padding-top: 4px;">
-                        Asus ROG STRIX Z370-E Gaming
+                    <div class="row clearfix">
+                        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
+                            <i class="material-icons">graphic_eq</i>
+                        </div>
+                        <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10" style="padding-top: 4px;">
+                            Nvidia GeForce RTX 2080
+                        </div>
                     </div>
-                </div>
-                <div class="row clearfix">
-                    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
-                        <i class="material-icons">data_usage</i>
+                    <div class="row clearfix">
+                        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
+                            <i class="material-icons">nfc</i>
+                        </div>
+                        <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10" style="padding-top: 4px;">
+                            Asus ROG STRIX Z370-E Gaming
+                        </div>
                     </div>
-                    <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10" style="padding-top: 4px;">
-                        Western Digital SSD 500GB + HDD 3TB
+                    <div class="row clearfix">
+                        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
+                            <i class="material-icons">data_usage</i>
+                        </div>
+                        <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10" style="padding-top: 4px;">
+                            Western Digital SSD 500GB + HDD 3TB
+                        </div>
                     </div>
-                </div>
-                <div class="row clearfix">
-                    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
-                        <i class="material-icons">wb_iridescent</i>
+                    <div class="row clearfix">
+                        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
+                            <i class="material-icons">wb_iridescent</i>
+                        </div>
+                        <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10" style="padding-top: 4px;">
+                            Kingston HyperX Predator 24GB
+                        </div>
                     </div>
-                    <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10" style="padding-top: 4px;">
-                        Kingston HyperX Predator 24GB
+                    <div class="row clearfix">
+                        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
+                            <i class="material-icons">storage</i>
+                        </div>
+                        <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10" style="padding-top: 4px;">
+                            CoolerMaster MasterCase H500M
+                        </div>
                     </div>
-                </div>
-                <div class="row clearfix">
-                    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
-                        <i class="material-icons">storage</i>
+                    <div class="row clearfix">
+                        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
+                            <i class="material-icons">ac_unit</i>
+                        </div>
+                        <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10" style="padding-top: 4px;">
+                            CoolerMaster MasterLiquid ML240R
+                        </div>
                     </div>
-                    <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10" style="padding-top: 4px;">
-                        CoolerMaster MasterCase H500M
+                    <div class="row clearfix">
+                        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
+                            <i class="material-icons">toys</i>
+                        </div>
+                        <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10" style="padding-top: 4px;">
+                            CoolerMaster MasterFan x 6
+                        </div>
                     </div>
-                </div>
-                <div class="row clearfix">
-                    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
-                        <i class="material-icons">ac_unit</i>
+                    <div class="row clearfix">
+                        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
+                            <i class="material-icons">power</i>
+                        </div>
+                        <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10" style="padding-top: 4px;">
+                            CoolerMaster MasterVatt V850
+                        </div>
                     </div>
-                    <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10" style="padding-top: 4px;">
-                        CoolerMaster MasterLiquid ML240R
-                    </div>
-                </div>
-                <div class="row clearfix">
-                    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
-                        <i class="material-icons">toys</i>
-                    </div>
-                    <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10" style="padding-top: 4px;">
-                        CoolerMaster MasterFan x 6
-                    </div>
-                </div>
-                <div class="row clearfix">
-                    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
-                        <i class="material-icons">power</i>
-                    </div>
-                    <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10" style="padding-top: 4px;">
-                        CoolerMaster MasterVatt V850
-                    </div>
-                </div>
 
-                <div class="row clearfix">
-                    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
-                        <i class="material-icons">desktop_windows</i>
+                    <div class="row clearfix">
+                        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
+                            <i class="material-icons">desktop_windows</i>
+                        </div>
+                        <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10" style="padding-top: 4px;">
+                            Samsung C27FG73
+                        </div>
                     </div>
-                    <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10" style="padding-top: 4px;">
-                        Samsung C27FG73
+                    <div class="row clearfix">
+                        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
+                            <i class="material-icons">mouse</i>
+                        </div>
+                        <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10" style="padding-top: 4px;">
+                            Logitech G903
+                        </div>
                     </div>
-                </div>
-                <div class="row clearfix">
-                    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
-                        <i class="material-icons">mouse</i>
+                    <div class="row clearfix">
+                        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
+                            <i class="material-icons">keyboard</i>
+                        </div>
+                        <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10" style="padding-top: 4px;">
+                            Logitech G110
+                        </div>
                     </div>
-                    <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10" style="padding-top: 4px;">
-                        Logitech G903
+                    <div class="row clearfix">
+                        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
+                            <i class="material-icons">headset_mic</i>
+                        </div>
+                        <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10" style="padding-top: 4px;">
+                            Sennheiser G4ME ONE
+                        </div>
                     </div>
-                </div>
-                <div class="row clearfix">
-                    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
-                        <i class="material-icons">keyboard</i>
-                    </div>
-                    <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10" style="padding-top: 4px;">
-                        Logitech G110
-                    </div>
-                </div>
-                <div class="row clearfix">
-                    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
-                        <i class="material-icons">headset_mic</i>
-                    </div>
-                    <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10" style="padding-top: 4px;">
-                        Sennheiser G4ME ONE
-                    </div>
-                </div>
-                <div class="row clearfix">
-                    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
-                        <i class="material-icons">videogame_asset</i>
-                    </div>
-                    <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10" style="padding-top: 4px;">
-                        Sony DualShock 4 + Microsoft Xbox One Controller + Nintendo Switch Pro Controller
+                    <div class="row clearfix">
+                        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
+                            <i class="material-icons">videogame_asset</i>
+                        </div>
+                        <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10" style="padding-top: 4px;">
+                            Sony DualShock 4 + Microsoft Xbox One Controller + Nintendo Switch Pro Controller
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     <!-- #END PC Specs -->
-    
+
 </div>
 <div class="row clearfix">
     <!-- #START Cards -->

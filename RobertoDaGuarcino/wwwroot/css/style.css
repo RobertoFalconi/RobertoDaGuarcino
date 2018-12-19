@@ -10111,9 +10111,10 @@ fieldset[disabled] .form-control {
         border-bottom: 1px solid #e9e9e9;
         background: url("../images/user-img-background.jpg") no-repeat no-repeat;
         height: 135px;
-        -webkit-transition: background 2s ease; /* Safari */
-        transition: background 0.5s ease;
+        -webkit-transition: background 1.5s ease; /* Safari */
+        transition: background 1.5s ease;
     }
+
         .sidebar .user-info:hover {
             padding: 13px 15px 12px 15px;
             white-space: nowrap;
@@ -10121,7 +10122,6 @@ fieldset[disabled] .form-control {
             border-bottom: 1px solid #e9e9e9;
             background: url("../images/img-hover.jpg") no-repeat no-repeat;
             height: 135px;
-            
         }
 
         .sidebar .user-info .image {
@@ -10831,13 +10831,13 @@ html.ie11 .bs-searchbox .form-control {
     transition: all 3s ease;
 }
 
-.morph:hover {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-}
+    .morph:hover {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 
 .tilt {
     -webkit-transition: all 0.5s ease;
@@ -10853,4 +10853,120 @@ html.ie11 .bs-searchbox .form-control {
         -o-transform: rotate(-10deg);
         -ms-transform: rotate(-10deg);
         transform: rotate(-10deg);
+    }
+
+
+.menu-active {
+    transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+    .menu-active:hover {
+        transform: scale(1.03);
+        -moz-transform: scale(1.03);
+        transform: scale(1.03);
+    }
+
+@keyframes slideInFromLeft {
+    0% {
+        -webkit-transform: rotate(-360deg);
+        -moz-transform: rotate(-360deg);
+        -o-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+
+
+@keyframes slideInFromRight {
+    0% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
+@-webkit-keyframes pulse {
+    25% {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    75% {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+    12% {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+
+    25% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    33% {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.pulse {
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+    .pulse:hover {
+        -webkit-animation-name: pulse;
+        animation-name: pulse;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
     }
