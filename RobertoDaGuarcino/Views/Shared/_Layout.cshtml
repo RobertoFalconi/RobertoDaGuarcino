@@ -6,7 +6,29 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <title>Roberto da Guarcino</title>
 
+     <script language="Javascript">
+
+function image() {
+};
+
+image = new image();
+number = 0;
+// imageArray
+
+         image[number++] = "<img src = '/images/stickman/img-001.gif' width='300' height = '120' /> "
+         image[number++] = "<img src = '/images/stickman/img-002.gif'  width='300' height = '120' /> "
+         image[number++] = "<img src = '/images/stickman/img-003.gif'  width='300' height = '120' /> "
+         image[number++] = "<img src = '/images/stickman/img-004.gif'  width='300' height = '120' /> "
+         image[number++] = "<img src = '/images/stickman/img-005.gif'  width='300' height = '120' /> "
+             
+
+increment = Math.floor(Math.random() * number);
+</script>
+
     <style>
+        .legal{
+            height:12%;
+        }
         ::-webkit-scrollbar {
             width: 0.8em !important;
             height: 0.8em !important;
@@ -132,6 +154,11 @@
             <div class="navbar-header">
                 <a href="javascript:void(0);" class="bars"></a>
                 <div class="navbar-brand tilt">ROBERTO DA GUARCINO</div>
+                <div class="pull-right">
+                   
+
+
+                </div>
             </div>
         </div>
     </nav>
@@ -167,15 +194,22 @@
                 <li id="index" class="menu-active">
                     <a asp-controller="Home" asp-action="Index"><i class="material-icons">home</i><span>My Home</span></a>
                 </li>
-                <li id="myprojects"class="menu-active">
+                <li id="myprojects" class="menu-active">
                     <a asp-area="" asp-controller="Home" asp-action="MyProjects"><i class="material-icons">widgets</i><span>My Projects</span></a>
                 </li>
-                <li id="mygames"class="menu-active">
+                <li id="mygames" class="menu-active">
                     <a asp-area="" asp-controller="Home" asp-action="MyGames"><i class="material-icons">games</i><span>My Games</span></a>
                 </li>
-                <li id="mycontacts"class="menu-active">
+                <li id="mycontacts" class="menu-active">
                     <a asp-area="" asp-controller="Home" asp-action="MyContacts"><i class="material-icons">contacts</i><span>My Contacts</span></a>
                 </li>
+                <li id="stickman" style="max-width:50px;max-height:50px;">
+
+                    <script language="JavaScript">
+                        document.write(image[increment]);
+                    </script>
+                </li>
+
             </ul>
         </div>
         <!-- #Menu -->
