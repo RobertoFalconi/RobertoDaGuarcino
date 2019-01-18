@@ -72,19 +72,28 @@ function initDonutChart() {
     Morris.Donut({
         element: 'donut_chart',
         data: [{
-            label: 'PC',
-            value: 252
+            label: 'Steam',
+            value: 294
+        }, {
+            label: 'Origin',
+            value: 32
+        }, {
+            label: 'Uplay',
+            value: 10
+        }, {
+            label: 'Blizzard',
+            value: 3
         }, {
             label: 'Xbox',
             value: 161
         }, {
             label: 'PlayStation',
-            value: 58
+            value: 59
         }, {
             label: 'Nintendo',
             value: 156
         }],
-        colors: ['grey', 'green', 'blue', 'red'],
+        colors: ['grey', 'orange', 'cyan', 'blue', 'green', 'blue', 'red'],
         formatter: function (y) {
             return y; // + '%'
         }
