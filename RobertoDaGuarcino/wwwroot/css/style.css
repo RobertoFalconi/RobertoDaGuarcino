@@ -10970,3 +10970,13 @@ html.ie11 .bs-searchbox .form-control {
         -webkit-animation-iteration-count: infinite;
         animation-iteration-count: infinite;
     }
+
+
+.centered > a > img {
+    vertical-align: middle !important;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
