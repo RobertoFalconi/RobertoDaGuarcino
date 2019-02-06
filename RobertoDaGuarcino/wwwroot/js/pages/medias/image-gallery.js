@@ -4,3 +4,10 @@ $(function () {
         selector: 'a'
     });
 });
+
+$(function () {
+    $('#aniimated-thumbnials2').lightGallery({
+        thumbnail: true,
+        selector: 'a'
+    });
+});
