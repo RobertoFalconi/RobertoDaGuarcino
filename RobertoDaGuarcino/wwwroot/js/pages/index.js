@@ -11,7 +11,6 @@
 
     initRealTimeChart();
     initDonutChart();
-    initDonutChart2();
     initSparkline();
 });
 
@@ -95,26 +94,6 @@ function initDonutChart() {
             value: 156
         }],
         colors: ['grey', 'orange', 'cyan', 'blue', 'green', 'blue', 'red'],
-        formatter: function (y) {
-            return y; // + '%'
-        }
-    });
-}
-
-function initDonutChart2() {
-    Morris.Donut({
-        element: 'donut_chart2',
-        data: [{
-            label: 'Achievements',
-            value: 4505
-        }, {
-            label: 'Games',
-            value: 606
-        }, {
-            label: 'Hours played',
-            value: 4634
-        }],
-        colors: ['blue', 'green', 'red'],
         formatter: function (y) {
             return y; // + '%'
         }
