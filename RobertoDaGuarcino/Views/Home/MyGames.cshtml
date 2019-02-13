@@ -5,10 +5,48 @@
     html {
         animation: 1s ease-out 0s 1 slideInFromRight;
     }
+   
+    @@media screen and (min-width: 1200px) and (max-width: 1530px) {
+        svg {
+           transform:scale(0.9);   
+           
+        }
+        #donut_chart2 {
+            left: 50px;
+        }
+        #resize {
+            margin-left: 100px;
+        }
+    }
+
+    /*@@media screen and (max-width: 991px) {
+        svg {
+            width: 100%
+        }
+    }*/
+
+    /*@@media screen and (min-width: 1630px) {
+        svg {
+            width: 100%;
+            max-width: 330px;
+            right: 200px;
+        }
+    }
+
+    @@media screen and (min-width: 400px) and (max-width: 1630px) {
+        svg {
+            width: 80%;
+            max-width: 330px;
+            right: 200px;
+        }
+    }*/
 </style>
 
 <script>
-    $('#mygames').addClass('active');
+    $(document).ready(function () {
+        $('svg').addClass('pull-right');
+        $('#mygames').addClass('active');
+    });
 </script>
 
 <div class="block-header">
@@ -110,14 +148,11 @@
             </div>
             <div class="body">
                 <div class="row clearfix">
-                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                        <div id="donut_chart" class="dashboard-donut-chart"></div>
-                    </div>
+                    <div id="resize">
+                    <div id="donut_chart" class="dashboard-donut-chart col-lg-6 col-md-12 col-sm-6 col-xs-12"></div>
+                    <div id="donut_chart2" class="dashboard-donut-chart col-lg-6 col-md-12 col-sm-6 col-xs-12 "></div>
+
                 </div>
-                <div class="row clearfix">
-                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                        <div id="donut_chart2" class="dashboard-donut-chart"></div>
-                    </div>
                 </div>
             </div>
         </div>
