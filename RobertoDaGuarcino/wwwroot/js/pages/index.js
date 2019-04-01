@@ -10,7 +10,7 @@
     });
 
     initRealTimeChart();
-    initDonutChart();
+    //initDonutChart();
     initDonutChart2();
     initSparkline();
 });
@@ -69,46 +69,46 @@ function initSparkline() {
     });
 }
 
-function initDonutChart() {
-    Morris.Donut({
-        element: 'donut_chart',
-        data: [{
-            label: 'Steam',
-            value: 294
-        }, {
-            label: 'Origin',
-            value: 32
-        }, {
-            label: 'Uplay',
-            value: 10
-        }, {
-            label: 'Blizzard',
-            value: 3
-        }, {
-            label: 'Xbox',
-            value: 161
-        }, {
-            label: 'PlayStation',
-            value: 59
-        }, {
-            label: 'Nintendo',
-            value: 156
-        }],
-        colors: ['grey', 'orange', 'cyan', 'blue', 'green', 'blue', 'red'],
-        formatter: function (y) {
-            return y; // + '%'
-        }
-    });
-}
+//function initDonutChart() {
+//    Morris.Donut({
+//        element: 'donut_chart',
+//        data: [{
+//            label: '# Steam games',
+//            value: 294
+//        }, {
+//            label: '# Origin games',
+//            value: 32
+//        }, {
+//            label: '# Uplay games',
+//            value: 10
+//        }, {
+//            label: '# Blizzard games',
+//            value: 3
+//        }, {
+//            label: '# Xbox games',
+//            value: 161
+//        }, {
+//            label: '# PlayStation games',
+//            value: 59
+//        }, {
+//            label: '# Nintendo games',
+//            value: 156
+//        }],
+//        colors: ['grey', 'orange', 'cyan', 'blue', 'green', 'blue', 'red'],
+//        formatter: function (y) {
+//            return y; // + '%'
+//        }
+//    });
+//}
 
 function initDonutChart2() {
     Morris.Donut({
         element: 'donut_chart2',
         data: [{
-            label: 'Achievements',
+            label: '# Achievements',
             value: 4505
         }, {
-            label: 'Games',
+            label: '# Games',
             value: 606
         }, {
             label: 'Hours played',
