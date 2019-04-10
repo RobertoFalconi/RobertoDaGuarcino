@@ -1,5 +1,5 @@
 # RobertoDaGuarcino
-MVC project, personal online portfolio and professional workbench.
+Web app software for a personal online portfolio and a professional workbench.
 
 Check it at http://www.robertodaguarcino.com
 
