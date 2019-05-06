@@ -11,7 +11,7 @@
 
     initRealTimeChart();
     //initDonutChart();
-    initDonutChart2();
+    //initDonutChart2();
     initSparkline();
 });
 
