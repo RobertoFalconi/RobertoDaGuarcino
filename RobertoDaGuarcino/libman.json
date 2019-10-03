@@ -33,7 +33,7 @@
     },
     {
       "provider": "unpkg",
-      "library": "raphael@2.2.8",
+      "library": "raphael@2.3.0",
       "destination": "wwwroot/lib/raphael/"
     },
     {
