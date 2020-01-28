@@ -63,6 +63,9 @@ namespace RobertoDaGuarcino
                     context.Response.Headers.Add("X-Frame-Options", "SAMEORIGIN");
                     context.Response.Headers.Add("X-XSS-Protection", "1");
                     context.Response.Headers.Add("X-Content-Type-Options", "nosniff");
+                    context.Response.Headers.Add("Content-Security-Policy", "script-src 'self'");
+                    context.Response.Headers.Add("Referrer-Policy", "same-origin");
+                    context.Response.Headers.Add("Feature-Policy", "https://www.slideshare.net/"); 
                     return Task.FromResult(0);
                 });
                 await next();
