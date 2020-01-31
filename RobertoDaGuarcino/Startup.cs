@@ -46,14 +46,6 @@ namespace RobertoDaGuarcino
 
             app.UseAuthorization();
 
-            //app.Use(async (context, next) =>
-            //{
-            //    context.Response.Headers.Add("X-Frame-Options", "SAMEORIGIN");
-            //    context.Response.Headers.Add("X-XSS-Protection", "1");
-            //    context.Response.Headers.Add("X-Content-Type-Options", "nosniff");
-            //    await next();
-            //});
-
             app.Use(async (context, next) =>
             {
                 context.Response.OnStarting(() =>
@@ -61,7 +53,7 @@ namespace RobertoDaGuarcino
                     context.Response.Headers.Add("Server", "Microsoft");
                     context.Response.Headers.Remove("X-Powered-By");
                     context.Response.Headers.Add("X-Frame-Options", "SAMEORIGIN");
-                    context.Response.Headers.Add("X-XSS-Protection", "1");
+                    context.Response.Headers.Add("X-XSS-Protection", "1; mode=block");
                     context.Response.Headers.Add("X-Content-Type-Options", "nosniff");
                     context.Response.Headers.Add("Content-Security-Policy", "script-src 'self'");
                     context.Response.Headers.Add("Referrer-Policy", "same-origin");
