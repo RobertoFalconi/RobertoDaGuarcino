@@ -57,7 +57,7 @@ namespace RobertoDaGuarcino
                     context.Response.Headers.Add("X-Content-Type-Options", "nosniff");
                     context.Response.Headers.Add("Content-Security-Policy", "script-src 'self'");
                     context.Response.Headers.Add("Referrer-Policy", "same-origin");
-                    context.Response.Headers.Add("Feature-Policy", "vibrate 'self'; usermedia 'self'; sync-xhr 'self'"); 
+                    context.Response.Headers.Add("Feature-Policy", "geolocation 'self'; midi 'self'; notifications 'self'; push 'self'; sync-xhr 'self'; microphone 'self'; camera 'self'; magnetometer 'self'; gyroscope 'self'; speaker 'self'; vibrate 'self'; fullscreen 'self'; payment 'self';"); 
                     return Task.FromResult(0);
                 });
                 await next();
