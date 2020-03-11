@@ -51,14 +51,13 @@ namespace RobertoDaGuarcino
                 context.Response.OnStarting(() =>
                 {
                     context.Response.Headers.Add("Server", "Microsoft");
-                    context.Response.Headers.Remove("X-Powered-By");
                     context.Response.Headers.Add("X-Frame-Options", "SAMEORIGIN");
                     context.Response.Headers.Add("X-XSS-Protection", "1; mode=block");
                     context.Response.Headers.Add("X-Content-Type-Options", "nosniff");
                     context.Response.Headers.Add("Content-Security-Policy", "base-uri 'none'; script-src 'self'; object-src 'self'");
                     context.Response.Headers.Add("Referrer-Policy", "same-origin");
-                    context.Response.Headers.Add("Feature-Policy", "geolocation 'self'; midi 'self'; notifications 'self'; push 'self'; sync-xhr 'self'; microphone 'self'; camera 'self'; magnetometer 'self'; gyroscope 'self'; speaker 'self'; vibrate 'self'; fullscreen 'self'; payment 'self';"); 
-                    return Task.FromResult(0);
+                    context.Response.Headers.Add("Feature-Policy", "geolocation 'self'; midi 'self'; notifications 'self'; push 'self'; sync-xhr 'self'; microphone 'self'; camera 'self'; magnetometer 'self'; gyroscope 'self'; speaker 'self'; vibrate 'self'; fullscreen 'self'; payment 'self';");
+                    return Task.CompletedTask;
                 });
                 await next();
             });
