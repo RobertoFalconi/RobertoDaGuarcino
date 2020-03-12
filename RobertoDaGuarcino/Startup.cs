@@ -50,6 +50,7 @@ namespace RobertoDaGuarcino
             {
                 context.Response.OnStarting(() =>
                 {
+                    context.Response.Headers.Add("X-Powered-By", "Microsoft");
                     context.Response.Headers.Add("Server", "Microsoft");
                     context.Response.Headers.Add("X-Frame-Options", "SAMEORIGIN");
                     context.Response.Headers.Add("X-XSS-Protection", "1; mode=block");
