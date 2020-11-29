@@ -50,14 +50,14 @@ namespace RobertoDaGuarcino
             {
                 context.Response.OnStarting(() =>
                 {
-                    context.Response.Headers.Add("X-Powered-By", "Microsoft");
-                    context.Response.Headers.Add("Server", "Microsoft");
+                    context.Response.Headers.Add("X-Powered-By", "M.");
+                    context.Response.Headers.Add("Server", "M.");
                     context.Response.Headers.Add("X-Frame-Options", "SAMEORIGIN");
                     context.Response.Headers.Add("X-XSS-Protection", "1; mode=block");
                     context.Response.Headers.Add("X-Content-Type-Options", "nosniff");
                     context.Response.Headers.Add("Content-Security-Policy", "base-uri 'none'; script-src 'self'; object-src 'self'");
                     context.Response.Headers.Add("Referrer-Policy", "same-origin");
-                    context.Response.Headers.Add("Feature-Policy", "geolocation 'self'; midi 'self'; notifications 'self'; push 'self'; sync-xhr 'self'; microphone 'self'; camera 'self'; magnetometer 'self'; gyroscope 'self'; speaker 'self'; vibrate 'self'; fullscreen 'self'; payment 'self';");
+                    context.Response.Headers.Add("Permissions-Policy", "geolocation=(none); midi=(none); notifications=(none); push=(none); sync-xhr=(none); microphone=(none); camera=(none); magnetometer=(none); gyroscope=(none); speaker=(none); vibrate=(none); fullscreen=(none); payment=(none);");
                     return Task.CompletedTask;
                 });
                 await next();
